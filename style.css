@@ -1,0 +1,299 @@
+/*Reset*/
+body,
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width:765px) {
+
+    #menu {
+        display: none
+    }
+
+    #navigation input:checked~#menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        margin-top: 10px;
+        width: 100vw;
+        height: 90vh;
+        opacity: 0.9;
+        right: 0;
+        background-color: white;
+        text-align: center;
+        box-shadow: 0px 0px 1px blue;
+        z-index: 3;
+    }
+
+    #photo_presentation {
+        width: 50%;
+        margin-top: 20px;
+    }
+
+    #texte_technologies {
+        flex-direction: column;
+    }
+
+    #exemples_realisations {
+        flex-direction: column;
+    }
+
+    #exemples_realisations img {
+        width: 80vw;
+
+    }
+
+}
+
+@media screen and (min-width:769px) {
+
+    #menu a {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    header label {
+        display: none;
+    }
+
+    #presentation {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #texte_presentation {
+        font-size: x-large;
+    }
+
+    #photo_presentation {
+        width: 75%;
+        margin-top: 20px;
+    }
+
+    #texte_competences {
+        font-size: xx-large;
+    }
+
+    #exemples_realisations {
+        flex-direction: row;
+    }
+
+    #exemples_realisations img {
+        width: 50vh;
+        margin-left: 20px;
+
+    }
+
+}
+
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: darkslategrey;
+    scroll-behavior: smooth;
+    text-shadow: 1px 1px 0px gray;
+
+}
+
+h1 {
+    font-size: medium;
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: papayawhip
+}
+
+.boutton {
+    display: inline-block;
+    margin: 20px;
+    height: 35px;
+    width: 100px;
+    font-size: large;
+    background-color: blue;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 2px black;
+    padding-top: 12px;
+
+
+}
+
+#contenu_boutton {
+    z-index: 1;
+}
+
+#contenu_boutton a {
+    color: yellow;
+}
+
+
+a,
+a:active,
+a:visited {
+    color: darkslateblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    z-index: 1;
+}
+
+header {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+
+}
+
+#humberger {
+    display: none;
+}
+
+label i {
+    color: darkslateblue;
+    font-size: x-large
+}
+
+#presentation {
+    background-color: darkslateblue;
+    margin-top: 10vh;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+#bg_presentation {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.1;
+}
+
+#competences {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    color: white;
+    height: 100vh;
+    text-align: center;
+
+}
+
+#bg_competences {
+    position: absolute;
+    top: 110vh;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.1;
+}
+
+#photo_competences {
+    width: 50%;
+}
+
+#technologies {
+    background-color: olivedrab;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#texte_technologies {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#texte_technologies i {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin: 5px;
+}
+
+#bg_technologies {
+    position: absolute;
+    top: 210vh;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.1;
+}
+
+#realisations {
+    background-color: slategrey;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bg_realisations {
+    position: absolute;
+    top: 310vh;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.1;
+}
+
+#exemples_realisations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#exemples_realisations img {
+    margin-top: 20px;
+
+}
+
+#contact {
+    background-color: salmon;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#contact a {
+    color: white;
+}
+
+
+#bg_contact {
+    position: absolute;
+    top: 410vh;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.1;
+}
